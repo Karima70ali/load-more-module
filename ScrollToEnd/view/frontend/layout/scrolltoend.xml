@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+* @category  Theme
+* @package   Bestresponse
+* @author    Best Response Media Developers <dev@bestresponsemedia.co.uk>
+* @copyright 2018 Best Response Media (http://bestresponsemedia.co.uk/)
+* @license   Best Response Media Licence http://bestresponsemedia.co.uk/license/
+* @link      http://bestresponsemedia.co.uk/
+* ┌─┐┌─┐┌─┐┌┬┐ ┬─┐┌─┐┌─┐┌─┐┌─┐┌┐┬┌─┐┌─┐ ┌┐┌┐┌─┐┌─┐┬┌─┐
+* │─│├┤ └─┐ │  ├┬┘├┤ └─┐├─┘│ ││││└─┐├┤  ││││├┤ │ │││─│
+* └─┘└─┘└─┘ ┴  ┴└─└─┘└─┘┴  └─┘┴└┘└─┘└─┘ ┴└┘┴└─┘└─┘┴┴ ┴
+-->
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <!--<css src="BestResponseMedia_ScrollToEnd/css/loadmore.css"/>-->
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block class="BestResponseMedia\ScrollToEnd\Block\Main" name="scroll.to.end.main" template="BestResponseMedia_ScrollToEnd::js.phtml"/>
+        </referenceContainer>
+    </body>
+</page>

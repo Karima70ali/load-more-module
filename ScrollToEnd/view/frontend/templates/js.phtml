@@ -1,0 +1,35 @@
+<?php
+/*
+* @category  Theme
+* @package   Bestresponse
+* @author    Best Response Media Developers <dev@bestresponsemedia.co.uk>
+* @copyright 2018 Best Response Media (http://bestresponsemedia.co.uk/)
+* @license   Best Response Media Licence http://bestresponsemedia.co.uk/license/
+* @link      http://bestresponsemedia.co.uk/
+* ┌─┐┌─┐┌─┐┌┬┐ ┬─┐┌─┐┌─┐┌─┐┌─┐┌┐┬┌─┐┌─┐ ┌┐┌┐┌─┐┌─┐┬┌─┐
+* │─│├┤ └─┐ │  ├┬┘├┤ └─┐├─┘│ ││││└─┐├┤  ││││├┤ │ │││─│
+* └─┘└─┘└─┘ ┴  ┴└─└─┘└─┘┴  └─┘┴└┘└─┘└─┘ ┴└┘┴└─┘└─┘┴┴ ┴
+*/
+
+$loadingImg = $this->getViewFileUrl('images/ajax-loader.gif');
+
+?>
+<script>
+    require(['jquery', 'scrolltoend'], function($,scrolltoend){
+
+        $(function(){
+            var requestParams = JSON.parse('<?php echo addslashes(json_encode($this->getParams())); ?>');
+            var currentUrl = '<?php echo addslashes($this->getCurrentUrl()); ?>';
+
+            scrolltoend.loadingIcon = '';
+            scrolltoend.init(currentUrl,requestParams);
+            window.scrolltoend = scrolltoend;
+
+            jQuery(document).on('mana-after-content-replaced', function() {
+                scrolltoend.init(currentUrl,requestParams);
+                window.scrolltoend = scrolltoend;
+            });
+        });
+
+    });
+</script>

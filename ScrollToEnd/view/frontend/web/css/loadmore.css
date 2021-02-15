@@ -1,0 +1,11 @@
+.loadmore {
+    padding: 0 30px;
+    text-align: center;
+}
+.loadmore a:after {
+    text-align: center;
+    margin: 5px auto;
+}
+.toolbar-products .pages{
+    display: none;
+}

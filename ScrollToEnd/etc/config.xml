@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!--
+* @category  Theme
+* @package   Bestresponse
+* @author    Best Response Media Developers <dev@bestresponsemedia.co.uk>
+* @copyright 2018 Best Response Media (http://bestresponsemedia.co.uk/)
+* @license   Best Response Media Licence http://bestresponsemedia.co.uk/license/
+* @link      http://bestresponsemedia.co.uk/
+* ┌─┐┌─┐┌─┐┌┬┐ ┬─┐┌─┐┌─┐┌─┐┌─┐┌┐┬┌─┐┌─┐ ┌┐┌┐┌─┐┌─┐┬┌─┐
+* │─│├┤ └─┐ │  ├┬┘├┤ └─┐├─┘│ ││││└─┐├┤  ││││├┤ │ │││─│
+* └─┘└─┘└─┘ ┴  ┴└─└─┘└─┘┴  └─┘┴└┘└─┘└─┘ ┴└┘┴└─┘└─┘┴┴ ┴
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <bestresponsemedia_scrolltoend>
+            <general>
+                <enabled>1</enabled>
+                <triggerPage>3</triggerPage>
+                <productContainerSelector>ol.products.list.items.product-items</productContainerSelector>
+                <productItemSelector>li.item.product.product-item</productItemSelector>
+                <toolbarSelector>.toolbar</toolbarSelector>
+            </general>
+        </bestresponsemedia_scrolltoend>
+    </default>
+</config>
